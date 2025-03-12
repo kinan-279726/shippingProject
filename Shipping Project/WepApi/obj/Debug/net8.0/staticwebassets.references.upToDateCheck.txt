@@ -1,0 +1,16 @@
+C:\Users\DELL\Desktop\Shipping\Shipping Project\Resources\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\DELL\Desktop\Shipping\Shipping Project\UIProject\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\DELL\Desktop\Shipping\Shipping Project\Resources\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\DELL\Desktop\Shipping\Shipping Project\UIProject\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\DELL\Desktop\Shipping\Shipping Project\Resources\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\DELL\Desktop\Shipping\Shipping Project\UIProject\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\DELL\Desktop\Shipping\Shipping Project\Resources\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\DELL\Desktop\Shipping\Shipping Project\UIProject\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\DELL\Desktop\Shipping\Shipping Project\Resources\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\DELL\Desktop\Shipping\Shipping Project\UIProject\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\DELL\Desktop\Shipping\Shipping Project\Resources\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\DELL\Desktop\Shipping\Shipping Project\UIProject\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\DELL\Desktop\Shipping\Shipping Project\Resources\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\DELL\Desktop\Shipping\Shipping Project\UIProject\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\DELL\Desktop\Shipping\Shipping Project\Resources\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\DELL\Desktop\Shipping\Shipping Project\UIProject\obj\Debug\net8.0\staticwebassets.build.json

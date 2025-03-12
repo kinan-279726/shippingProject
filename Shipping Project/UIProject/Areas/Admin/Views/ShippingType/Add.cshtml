@@ -1,0 +1,38 @@
+﻿@{
+}
+@model ShipmentTypeDto
+<div class=" col-12 grid-margin stretch-card h-100 ">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title mt-5 mb-5">@ResActions.AddNew @ResShipping.ShipmentType</h4>
+            <form class="forms-sample" method="post" asp-action="Add" asp-controller="ShippingType">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label for="exampleInputName1">@ResShipping.ArabicName</label>
+                    <input asp-for="TypeArabicName" type="text" class="form-control" id="exampleInputName1" placeholder="@ResShipping.ArabicName">
+                    <span asp-validation-for="TypeArabicName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">@ResShipping.EnglishName</label>
+                    <input asp-for="TypeEnglishName" type="text" class="form-control" id="exampleInputEmail3" placeholder="@ResShipping.EnglishName">
+                    <span asp-validation-for="TypeEnglishName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="hidden" asp-for="Id">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputCity1">@ResShipping.ShippingFactor</label>
+                    <input asp-for="ShippingFactor" value="null" type="number" min="0" class="form-control" id="exampleInputCity1" placeholder="@ResShipping.ShippingFactor">
+                    <span asp-validation-for="ShippingFactor" class="text-danger"></span>
+                </div>
+                <input type="submit" value="@ResActions.Submit" class="btn btn-gradient-primary me-2">
+                <input type="reset" value="@ResActions.Cancel" class="btn btn-dark" />
+            </form>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

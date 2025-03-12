@@ -1,0 +1,121 @@
+﻿@{
+    ViewData["Title"] = "Register";
+}
+@model RegisterUserDto
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Purple Admin</title>
+<!-- plugins:css -->
+<link rel="stylesheet" href="~/Admin/vendors/mdi/css/materialdesignicons.min.css">
+<link rel="stylesheet" href="~/Admin/vendors/css/vendor.bundle.base.css">
+<!-- endinject -->
+<!-- Plugin css for this page -->
+<!-- End plugin css for this page -->
+<!-- inject:css -->
+<!-- endinject -->
+<!-- Layout styles -->
+<link rel="stylesheet" href="~/Admin/css/demo_4/style.css">
+<!-- End layout styles -->
+<link rel="shortcut icon" href="~/Admin/images/favicon.png" />
+    <div class="container-scroller">
+        <div class="container-fluid page-body-wrapper full-page-wrapper">
+            <div class="content-wrapper d-flex align-items-stretch auth auth-img-bg">
+                <div class="row flex-grow">
+                    <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                        <div class="auth-form-transparent text-left p-3">
+                            <h4>New here?</h4>
+                            <h6 class="font-weight-light">Join us today! It takes only few steps</h6>
+                            <form class="pt-3" method="post" asp-action="Register" asp-controller ="Account">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <div class="form-group">
+                                    <label>@ResLabels.Username_</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend bg-transparent">
+                                            <span class="input-group-text bg-transparent border-right-0">
+                                                <i class="mdi mdi-account-outline text-primary"></i>
+                                            </span>
+                                        </div>
+                                        <input asp-for="UserName" type="text" class="form-control form-control-lg border-left-0" placeholder="@ResLabels.Username_">
+                                    </div>
+                                        <span asp-validation-for="UserName" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label>@ResLabels.Email_</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend bg-transparent">
+                                            <span class="input-group-text bg-transparent border-right-0">
+                                                <i class="mdi mdi-email-outline text-primary"></i>
+                                            </span>
+                                        </div>
+                                        <input asp-for="Email" type="email" class="form-control form-control-lg border-left-0" placeholder="@ResLabels.Email_">
+                                    </div>
+                                        <span class="text-danger" asp-validation-for="Email"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label>@ResLabels.Password_</label>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend bg-transparent">
+                                            <span class="input-group-text bg-transparent border-right-0">
+                                                <i class="mdi mdi-lock-outline text-primary"></i>
+                                            </span>
+                                        </div>
+                                        <input asp-for="Password" type="password" class="form-control form-control-lg border-left-0" id="exampleInputPassword" placeholder="@ResLabels.Password_">
+                                    </div>
+                                        <span class="text-danger" asp-validation-for="Password"></span>
+                                </div>
+                            <div class="form-group">
+                                <label>@ResLabels.ConfirmPassword</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend bg-transparent">
+                                        <span class="input-group-text bg-transparent border-right-0">
+                                            <i class="mdi mdi-lock-outline text-primary"></i>
+                                        </span>
+                                    </div>
+                                    <input asp-for="ConfirmPassword" type="password" class="form-control form-control-lg border-left-0" id="exampleInputPassword" placeholder="@ResLabels.ConfirmPassword">
+                                </div>
+                                    <span class="text-danger" asp-validation-for="ConfirmPassword"></span>
+                            </div>
+                                <div class="mb-4">
+                                    <div class="form-check">
+                                        <label class="form-check-label text-muted">
+                                            <input type="checkbox" class="form-check-input"> @ResLabels.RememberMe
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <input  type="submit" value="@ResActions.Register" class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn" />
+                                </div>
+                                <div class="text-center mt-4 font-weight-light">
+                                    Already have an account? <a asp-action="LogIn" asp-controller="Account"class="text-primary">@ResActions.Login</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 register-half-bg d-flex flex-row">
+                        <p class="text-white font-weight-medium text-center flex-grow align-self-end">Copyright &copy; 2021 All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- content-wrapper ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+
+@section Scripts{
+    <script src="~/Admin/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="~/Admin/js/off-canvas.js"></script>
+    <script src="~/Admin/js/hoverable-collapse.js"></script>
+    <script src="~/Admin/js/misc.js"></script>
+    <script src="~/Admin/js/settings.js"></script>
+    <script src="~/Admin/js/todolist.js"></script>
+    <script src="~/Admin/js/jquery.cookie.js"></script>
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+<!-- endinject -->

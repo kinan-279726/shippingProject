@@ -1,0 +1,17 @@
+C:\Users\DELL\Desktop\Shipping\Shipping Project\DataAccess\bin\Debug\net8.0\DataAccess.deps.json
+C:\Users\DELL\Desktop\Shipping\Shipping Project\DataAccess\bin\Debug\net8.0\DataAccess.runtimeconfig.json
+C:\Users\DELL\Desktop\Shipping\Shipping Project\DataAccess\bin\Debug\net8.0\DataAccess.dll
+C:\Users\DELL\Desktop\Shipping\Shipping Project\DataAccess\bin\Debug\net8.0\DataAccess.pdb
+C:\Users\DELL\Desktop\Shipping\Shipping Project\DataAccess\bin\Debug\net8.0\Domains.dll
+C:\Users\DELL\Desktop\Shipping\Shipping Project\DataAccess\bin\Debug\net8.0\Domains.pdb
+C:\Users\DELL\Desktop\Shipping\Shipping Project\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\Shipping\Shipping Project\DataAccess\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\Shipping\Shipping Project\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\Shipping\Shipping Project\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
+C:\Users\DELL\Desktop\Shipping\Shipping Project\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\Shipping\Shipping Project\DataAccess\obj\Debug\net8.0\DataAccess.csproj.Up2Date
+C:\Users\DELL\Desktop\Shipping\Shipping Project\DataAccess\obj\Debug\net8.0\DataAccess.dll
+C:\Users\DELL\Desktop\Shipping\Shipping Project\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
+C:\Users\DELL\Desktop\Shipping\Shipping Project\DataAccess\obj\Debug\net8.0\DataAccess.pdb
+C:\Users\DELL\Desktop\Shipping\Shipping Project\DataAccess\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
+C:\Users\DELL\Desktop\Shipping\Shipping Project\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll
