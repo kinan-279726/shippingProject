@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Domains;
-public class BaseTable 
+public  class BaseTable
 {   
     [Key]
     public required string Id { get; set; }

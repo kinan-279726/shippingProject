@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "WepApi\\WepApi.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "UIProject\\UIProject.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -19,8 +19,10 @@ public class BaseServices<T , Dto> : IBaseServices<T , Dto> where T : BaseTable 
     private readonly ItablsGenericRepositorys<T> Orepo;
     private readonly ILogger<BaseServices<T , Dto>> Ologger;
     private readonly IMapper  Omapper;
-    public BaseServices(ItablsGenericRepositorys<T> repo, ILogger<BaseServices<T,Dto>> logger , IMapper mapper) 
+    private readonly IUsersServices OusersServices;
+    public BaseServices(ItablsGenericRepositorys<T> repo, ILogger<BaseServices<T,Dto>> logger , IMapper mapper , IUsersServices usersServices) 
     {
+        this.OusersServices = usersServices;
         this.Orepo = repo;
         this.Ologger = logger;
         this.Omapper = mapper;
@@ -47,10 +49,11 @@ public class BaseServices<T , Dto> : IBaseServices<T , Dto> where T : BaseTable 
             throw new DataAccessException(ex, "", Ologger);
         }
     }
-    public bool Update(Dto entity, string userId)
+    public bool Update(Dto entity)
     {
         try
         {
+            string userId = OusersServices.GetCrruntUser();
             Orepo.Update(Omapper.Map<Dto, T>(entity), userId);
             return true;
         }
@@ -59,10 +62,11 @@ public class BaseServices<T , Dto> : IBaseServices<T , Dto> where T : BaseTable 
             throw new DataAccessException(ex, "", Ologger);
         }
     }
-    public bool Add(Dto entity, string userId)
+    public bool Add(Dto entity)
     {
         try
         {
+            string userId = OusersServices.GetCrruntUser();
             Orepo.Add(Omapper.Map<Dto, T>(entity), userId);
             return true;
         }
@@ -71,10 +75,11 @@ public class BaseServices<T , Dto> : IBaseServices<T , Dto> where T : BaseTable 
             throw new DataAccessException(ex, "", Ologger);
         }
     }
-    public bool ChangeCurrentStatus(string id, string userId)
+    public bool ChangeCurrentStatus(string id)
     {
         try
         {
+            string userId = OusersServices.GetCrruntUser();
             Orepo.ChangeCurrentStatus(id, userId);
             return true;
         }

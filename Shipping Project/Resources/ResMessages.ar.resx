@@ -153,6 +153,9 @@
   <data name="InvalidFileFormat" xml:space="preserve">
     <value>تنسيق الملف غير صالح</value>
   </data>
+  <data name="InvalidUsernameOrEmail" xml:space="preserve">
+    <value>الربيد الالكتروني او اسم المستخدم غير صحيح</value>
+  </data>
   <data name="InvalidUsernameOrPassword" xml:space="preserve">
     <value>اسم المستخدم أو كلمة المرور غير صحيحة</value>
   </data>

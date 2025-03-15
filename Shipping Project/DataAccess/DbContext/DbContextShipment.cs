@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Domains;
+using System.Reflection.Emit;
 
 namespace DataAccess;
 public class DbContextShipment : IdentityDbContext<TbUsers> // inhiret from custom users class to add my column 
@@ -17,6 +18,7 @@ public class DbContextShipment : IdentityDbContext<TbUsers> // inhiret from cust
     public DbContextShipment(DbContextOptions<DbContextShipment> options) : base(options)
     {
     }
+    // tables
     public virtual DbSet<TbCarriers> TbCarriers { get; set; }
     public virtual DbSet<TbAboutUs> TbAboutUs { get; set; }
     public virtual DbSet<TbCities> TbCities { get; set; }
@@ -31,6 +33,9 @@ public class DbContextShipment : IdentityDbContext<TbUsers> // inhiret from cust
     public virtual DbSet<TbUsersReceivers> TbUsersReceivers { get; set; }
     public virtual DbSet<TbUsersSender> TbUsersSender { get; set; }
     public virtual DbSet<TbUserSubscriptions> TbUserSubscriptions { get; set; }
+
+    // views
+    public virtual DbSet<VwCiti> VwCitis { get; set; }
     protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
     {
         base.ConfigureConventions(configurationBuilder);
@@ -163,6 +168,21 @@ public class DbContextShipment : IdentityDbContext<TbUsers> // inhiret from cust
         });
 
         builder.Entity<TbAboutUs>().HasKey(a => a.Id);
+
+        builder.Entity<VwCiti>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToView("VwCitis");
+
+            entity.Property(e => e.CityArabicName).HasMaxLength(100);
+            entity.Property(e => e.CityEnglithName).HasMaxLength(100);
+            entity.Property(e => e.CityId).HasMaxLength(450);
+            entity.Property(e => e.CountryArabicName).HasMaxLength(100);
+            entity.Property(e => e.CountryEnglishName).HasMaxLength(100);
+            entity.Property(e => e.CountryId).HasMaxLength(450);
+        });
+
     }
     protected override Version SchemaVersion => base.SchemaVersion;
 }

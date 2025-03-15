@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 namespace BusinessLayer.DTO;
 
-public class BaseDto
+public  class BaseDto
 {
     [ValidateNever]
     public required string Id { get; set; }

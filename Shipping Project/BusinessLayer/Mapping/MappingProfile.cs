@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using BusinessLayer.DTO;
+using DataAccess.Migrations;
 using Domains;
 
 namespace BusinessLayer.Mapping;
@@ -13,6 +14,7 @@ public class MappingProfile : Profile
 {
     public MappingProfile()
     {
+        // tables
         CreateMap<TbAboutUs , AboutUsDto>().ReverseMap();
         CreateMap<TbCarriers , CarriersDto>().ReverseMap();
         CreateMap<TbCities , CitesDto>().ReverseMap();
@@ -28,5 +30,8 @@ public class MappingProfile : Profile
         CreateMap<TbUsers , UsersDto>().ReverseMap();
         CreateMap<TbUsersSender , UsersSenderDto>().ReverseMap();
         CreateMap<TbUserSubscriptions , UserSubscriptionsDto>().ReverseMap();
+
+        // views
+        CreateMap<VwCiti , VwCitesDto>().ReverseMap();
     }
 }

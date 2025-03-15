@@ -11,7 +11,7 @@ public interface IBaseServices<T, Dto> where T : BaseTable where Dto : BaseDto
 {
     public List<Dto> GetAll(bool deleted = false, bool all = false, bool unDeleted = true);
     public Dto? GetById(string id);
-    public bool Update(Dto entity, string userId);
-    public bool Add(Dto entity, string userId);
-    public bool ChangeCurrentStatus(string id, string userId);
+    public bool Update(Dto entity);
+    public bool Add(Dto entity);
+    public bool ChangeCurrentStatus(string id);
 }

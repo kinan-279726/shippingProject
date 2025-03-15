@@ -16,4 +16,7 @@ public interface IUsersServices
     Task LogOutAsync();
     Task<UsersDto> GetUserByIdAsync(string id);
     Task<IEnumerable<UsersDto>> GetAllUsersAsync();
+    string GetCrruntUser();
+    Task<UserResultDto> CheckEmailAndUsername(UsersDto model);
+    Task<UserResultDto> ChangePasswordAsync(ChangePasswordDto model);
 }

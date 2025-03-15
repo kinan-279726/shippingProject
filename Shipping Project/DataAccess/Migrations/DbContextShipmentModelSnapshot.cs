@@ -58,7 +58,7 @@ namespace DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("TbAboutUs", (string)null);
+                    b.ToTable("TbAboutUs");
                 });
 
             modelBuilder.Entity("Domains.TbCarriers", b =>
@@ -92,7 +92,7 @@ namespace DataAccess.Migrations
                     b.HasIndex("UserId")
                         .IsUnique();
 
-                    b.ToTable("TbCarriers", (string)null);
+                    b.ToTable("TbCarriers");
                 });
 
             modelBuilder.Entity("Domains.TbCities", b =>
@@ -135,7 +135,7 @@ namespace DataAccess.Migrations
 
                     b.HasIndex("CountryId");
 
-                    b.ToTable("TbCities", (string)null);
+                    b.ToTable("TbCities");
                 });
 
             modelBuilder.Entity("Domains.TbCountries", b =>
@@ -172,7 +172,7 @@ namespace DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("TbCountries", (string)null);
+                    b.ToTable("TbCountries");
                 });
 
             modelBuilder.Entity("Domains.TbHomeSliders", b =>
@@ -211,7 +211,7 @@ namespace DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("TbHomeSliders", (string)null);
+                    b.ToTable("TbHomeSliders");
                 });
 
             modelBuilder.Entity("Domains.TbPaymentMethod", b =>
@@ -249,7 +249,7 @@ namespace DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("TbPaymentMethod", (string)null);
+                    b.ToTable("TbPaymentMethod");
                 });
 
             modelBuilder.Entity("Domains.TbSettings", b =>
@@ -325,7 +325,7 @@ namespace DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("TbSettings", (string)null);
+                    b.ToTable("TbSettings");
                 });
 
             modelBuilder.Entity("Domains.TbShipmentStatus", b =>
@@ -373,7 +373,7 @@ namespace DataAccess.Migrations
                     b.HasIndex("ShipmentId")
                         .IsUnique();
 
-                    b.ToTable("TbShipmentStatus", (string)null);
+                    b.ToTable("TbShipmentStatus");
                 });
 
             modelBuilder.Entity("Domains.TbShipmentType", b =>
@@ -411,7 +411,7 @@ namespace DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("TbShipmentType", (string)null);
+                    b.ToTable("TbShipmentType");
                 });
 
             modelBuilder.Entity("Domains.TbShipments", b =>
@@ -496,7 +496,7 @@ namespace DataAccess.Migrations
                         .IsUnique()
                         .HasFilter("[UserSubscriptionId] IS NOT NULL");
 
-                    b.ToTable("TbShipments", (string)null);
+                    b.ToTable("TbShipments");
                 });
 
             modelBuilder.Entity("Domains.TbSubscriptionPackages", b =>
@@ -537,7 +537,7 @@ namespace DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("TbSubscriptionPackages", (string)null);
+                    b.ToTable("TbSubscriptionPackages");
                 });
 
             modelBuilder.Entity("Domains.TbUserSubscriptions", b =>
@@ -579,7 +579,7 @@ namespace DataAccess.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("TbUserSubscriptions", (string)null);
+                    b.ToTable("TbUserSubscriptions");
                 });
 
             modelBuilder.Entity("Domains.TbUsers", b =>
@@ -709,7 +709,7 @@ namespace DataAccess.Migrations
                     b.HasIndex("UserId")
                         .IsUnique();
 
-                    b.ToTable("TbUsersReceivers", (string)null);
+                    b.ToTable("TbUsersReceivers");
                 });
 
             modelBuilder.Entity("Domains.TbUsersSender", b =>
@@ -769,7 +769,44 @@ namespace DataAccess.Migrations
                     b.HasIndex("UserId")
                         .IsUnique();
 
-                    b.ToTable("TbUsersSender", (string)null);
+                    b.ToTable("TbUsersSender");
+                });
+
+            modelBuilder.Entity("Domains.VwCiti", b =>
+                {
+                    b.Property<string>("CityArabicName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("CityEnglithName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("CityId")
+                        .IsRequired()
+                        .HasMaxLength(450)
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CountryArabicName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("CountryEnglishName")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("CountryId")
+                        .IsRequired()
+                        .HasMaxLength(450)
+                        .HasColumnType("nvarchar(450)");
+
+                    b.ToTable((string)null);
+
+                    b.ToView("VwCitis", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

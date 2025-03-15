@@ -14,7 +14,7 @@ namespace BusinessLayer.Services;
 
 public class ShipmentTypeServices : BaseServices<TbShipmentType , ShipmentTypeDto>, IShipmentTypeServices
 {
-    public ShipmentTypeServices(ItablsGenericRepositorys<TbShipmentType> Orepo, ILogger<ShipmentTypeServices> logger , IMapper mapper) : base(Orepo, logger, mapper)
+    public ShipmentTypeServices(ItablsGenericRepositorys<TbShipmentType> Orepo, ILogger<ShipmentTypeServices> logger , IMapper mapper, IUsersServices usersServices) : base(Orepo, logger, mapper, usersServices)
     {
     }
 }

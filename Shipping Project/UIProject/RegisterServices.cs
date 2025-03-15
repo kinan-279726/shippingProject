@@ -47,8 +47,10 @@ public static class RegisterServices
 
         // inject Generic repository
         builder.Services.AddScoped(typeof(ItablsGenericRepositorys<>), typeof(TablsGenericRepositorys<>));
+        builder.Services.AddScoped(typeof(IviewsGenericRepositorys<>), typeof(ViewsGenericRepositorys<>));
 
         // inject Business Layer 
+        // table
         builder.Services.AddScoped<IShipmentsServices, ShipmentServices>();
         builder.Services.AddScoped<IAboutUsServices, AboutUsServices>();
         builder.Services.AddScoped<ICarriersServices, CarriersServices>();
@@ -64,6 +66,12 @@ public static class RegisterServices
         builder.Services.AddScoped<IShipmentStatusServices, ShipmentStatusServices>();
         builder.Services.AddScoped<ISubscriptionPackagesServices, SubsciptionPackagesServices>();
         builder.Services.AddScoped<IPaymentMethodServices, PaymentMethodServices>();
+
+        // views
+        builder.Services.AddScoped<IViewCitesServices ,VeiwCitesServices>();
+
+        // opject
+        builder.Services.AddScoped<HttpContextAccessor , HttpContextAccessor>();
 
         //Configure serilog
         Log.Logger = new LoggerConfiguration()

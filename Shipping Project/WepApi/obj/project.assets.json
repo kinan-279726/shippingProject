@@ -7931,6 +7931,8 @@
     "net8.0": [
       "AutoMapper.Extensions.ExpressionMapping >= 8.0.0",
       "BusinessLayer >= 1.0.0",
+      "DataAccess >= 1.0.0",
+      "Domains >= 1.0.0",
       "Microsoft.AspNetCore.Mvc >= 2.3.0",
       "Microsoft.AspNetCore.Mvc.Abstractions >= 2.3.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.2",
@@ -7976,6 +7978,12 @@
           "projectReferences": {
             "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\BusinessLayer\\BusinessLayer.csproj": {
               "projectPath": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\BusinessLayer\\BusinessLayer.csproj"
+            },
+            "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\DataAccess\\DataAccess.csproj"
+            },
+            "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\Domains\\Domains.csproj": {
+              "projectPath": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\Domains\\Domains.csproj"
             },
             "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\Resources\\Resources.csproj": {
               "projectPath": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\Resources\\Resources.csproj"

@@ -141,6 +141,9 @@
   <data name="Confirm" xml:space="preserve">
     <value>تأكيد</value>
   </data>
+  <data name="ConfirmNewPassword" xml:space="preserve">
+    <value>تاكيد كلمة المرور الجديدة</value>
+  </data>
   <data name="Continue" xml:space="preserve">
     <value>متابعة</value>
   </data>
@@ -159,6 +162,12 @@
   <data name="Export" xml:space="preserve">
     <value>تصدير</value>
   </data>
+  <data name="FindMyAccount" xml:space="preserve">
+    <value>ايجاد حسابي</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>نسيت كلمة المرور</value>
+  </data>
   <data name="Import" xml:space="preserve">
     <value>استيراد</value>
   </data>
@@ -173,6 +182,9 @@
   </data>
   <data name="New" xml:space="preserve">
     <value>جديد</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>كلمة مرور جديدة</value>
   </data>
   <data name="Next" xml:space="preserve">
     <value>التالي</value>

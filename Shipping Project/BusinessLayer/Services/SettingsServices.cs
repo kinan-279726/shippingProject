@@ -14,7 +14,7 @@ namespace BusinessLayer.Services;
 
 public class SettingsServices : BaseServices<TbSettings , SettingsDto>, ISettingsServices
 {
-    public SettingsServices(ItablsGenericRepositorys<TbSettings> Orepo, ILogger<SettingsServices> logger , IMapper mapper) : base(Orepo, logger ,mapper)
+    public SettingsServices(ItablsGenericRepositorys<TbSettings> Orepo, ILogger<SettingsServices> logger , IMapper mapper, IUsersServices usersServices) : base(Orepo, logger, mapper, usersServices)
     {
     }
 }

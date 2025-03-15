@@ -14,7 +14,7 @@ namespace BusinessLayer.Services;
 
 public class UserSubscriptionsServices : BaseServices<TbUserSubscriptions , UserSubscriptionsDto>, IUserSubscriptionsServices
 {
-    public UserSubscriptionsServices(ItablsGenericRepositorys<TbUserSubscriptions> Orepo, ILogger<UserSubscriptionsServices> logger , IMapper mapper) : base(Orepo, logger, mapper)
+    public UserSubscriptionsServices(ItablsGenericRepositorys<TbUserSubscriptions> Orepo, ILogger<UserSubscriptionsServices> logger , IMapper mapper, IUsersServices usersServices) : base(Orepo, logger, mapper, usersServices)
     {
     }
 }

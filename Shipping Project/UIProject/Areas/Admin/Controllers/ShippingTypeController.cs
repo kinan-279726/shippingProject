@@ -1,12 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using BusinessLayer.Contracts;
 using BusinessLayer.DTO;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using UIProject.Controllers;
 
 namespace UIProject.Areas.Admin.Controllers
 {
-    [Area("Admin")]
+    [Area("Admin"),Authorize(Roles ="admin")]
     public class ShippingTypeController : BaseController
     {
         private readonly IShipmentTypeServices OShipmentTypeServices;
@@ -28,10 +29,10 @@ namespace UIProject.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Add(ShipmentTypeDto model)
         {
-            model.Id = Guid.NewGuid().ToString();
+            
             if (ModelState.IsValid)
             {
-                 OShipmentTypeServices.Add(model, Guid.NewGuid().ToString()); 
+                 OShipmentTypeServices.Add(model); 
             }else
             {
                 return View(model);
@@ -40,7 +41,7 @@ namespace UIProject.Areas.Admin.Controllers
         }
         public IActionResult ChangeStatus(string id )
         {
-            OShipmentTypeServices.ChangeCurrentStatus(id,Guid.NewGuid().ToString());
+            OShipmentTypeServices.ChangeCurrentStatus(id);
             return RedirectToAction("Index");
         }
         public IActionResult Edit(string id)
@@ -49,9 +50,9 @@ namespace UIProject.Areas.Admin.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult EditShipmentType(ShipmentTypeDto model)
+        public IActionResult Edit(ShipmentTypeDto model)
         {
-            OShipmentTypeServices.Update(model , Guid.NewGuid().ToString());
+            OShipmentTypeServices.Update(model );
             return RedirectToAction("Index");
         }
     }

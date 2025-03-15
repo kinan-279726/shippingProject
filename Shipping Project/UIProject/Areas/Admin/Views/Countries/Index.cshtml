@@ -1,0 +1,53 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model List<CountriesDto>
+<div class="col-12 grid-margin stretch-card h-100 ">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title mt-5 mb-5">@ResLabels.Country_</h4>
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th> # </th>
+                        <th> @ResShipping.ArabicName </th>
+                        <th> @ResShipping.EnglishName </th>
+                        <th> @ResActions.Action </th>
+                    </tr>
+                </thead>
+                <tbody>
+                        @for(int x =1; x<=Model.Count; x++){
+                    <tr>
+                            <td>@x</td>
+                            <td> @Model[x-1].CountryArabicName </td>
+                            <td> @Model[x-1].CountryEnglishName </td>
+                          <td>
+                                <a asp-action="Edit" asp-controller="Countries" asp-route-id="@Model[x-1].Id" class="btn btn-info">@ResActions.Edit</a>
+                                <button asp-action="ChangeStatus" asp-controller="Countries" data-id="@Model[x-1].Id" asp-route-id="@Model[x-1].Id" class="btn btn-danger" onclick="return confirm(@ResMessages.ConfirmDeleteRecord);">@ResActions.Delete</button>
+                          </td>
+                    </tr>
+                        }
+                </tbody>
+            </table>
+            <a asp-controller="Countries" asp-action="Add" class="btn btn-primary mt-5">@ResActions.New</a>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script>
+        $(document).ready(function(){
+            $(".btn-danger").on('click' ,function(e){
+                var id = $(this).data("id");
+                var deletUrl = '@Url.Action("ChangeStatus", "ShippingType")';
+                console.log(id);
+                alert.confirmDelete(function (result){
+                    if(result){
+                        window.location.href = deletUrl+'/'+id;
+                    }
+                })
+            })
+        })
+    </script>
+}

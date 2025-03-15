@@ -14,7 +14,7 @@ namespace BusinessLayer.Services;
 
 public class CountriesServices : BaseServices<TbCountries , CountriesDto>, ICountriesServices
 {
-    public CountriesServices(ItablsGenericRepositorys<TbCountries> Orepo, ILogger<CountriesServices> logger , IMapper mapper) : base(Orepo, logger, mapper)
+    public CountriesServices(ItablsGenericRepositorys<TbCountries> Orepo, ILogger<CountriesServices> logger , IMapper mapper, IUsersServices usersServices) : base(Orepo, logger, mapper, usersServices)
     {
     }
 }

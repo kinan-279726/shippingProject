@@ -14,7 +14,7 @@ namespace BusinessLayer.Services;
 
 public class CitiesServices : BaseServices<TbCities , CitesDto>, ICitiesServices
 {
-    public CitiesServices(ItablsGenericRepositorys<TbCities> Orepo, ILogger<CitiesServices> logger , IMapper mapper) : base(Orepo, logger ,mapper)
+    public CitiesServices(ItablsGenericRepositorys<TbCities> Orepo, ILogger<CitiesServices> logger , IMapper mapper, IUsersServices usersServices) : base(Orepo, logger, mapper, usersServices)
     {
     }
 }

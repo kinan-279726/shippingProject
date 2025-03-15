@@ -169,6 +169,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Invalid Username or Email.
+        /// </summary>
+        public static string InvalidUsernameOrEmail {
+            get {
+                return ResourceManager.GetString("InvalidUsernameOrEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Invalid username or password.
         /// </summary>
         public static string InvalidUsernameOrPassword {

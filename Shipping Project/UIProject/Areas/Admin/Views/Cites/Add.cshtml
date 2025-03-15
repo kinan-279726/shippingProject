@@ -1,0 +1,42 @@
+﻿@{
+}
+@model VwCitesDto
+<div class=" col-12 grid-margin stretch-card h-100 ">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title mt-5 mb-5">@ResActions.AddNew @ResLabels.City_</h4>
+            <form class="forms-sample" method="post" asp-action="Add" asp-controller="Cites">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label for="exampleInputName1">@ResShipping.ArabicName</label>
+                    <input asp-for="CityArabicName" type="text" class="form-control" id="exampleInputName1" placeholder="@ResShipping.ArabicName">
+                    <span asp-validation-for="CityArabicName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">@ResShipping.EnglishName</label>
+                    <input asp-for="CityEnglithName" type="text" class="form-control" id="exampleInputEmail3" placeholder="@ResShipping.EnglishName">
+                    <span asp-validation-for="CityEnglithName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">@ResLabels.Country_</label>
+                    <select  asp-for="CountryId" class="form-control" id="exampleInputName1" asp-items="@(new SelectList(ViewBag.Countries,"Id" , "CountryEnglishName"))">
+
+                    </select>
+                    <span asp-validation-for="CityEnglithName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="hidden" asp-for="CityId">
+                    <input type="hidden" asp-for="CountryArabicName">
+                    <input type="hidden" asp-for="CountryEnglishName">
+                </div>
+                <input type="submit" value="@ResActions.Submit" class="btn btn-gradient-primary me-2">
+                <input type="reset" value="@ResActions.Cancel" class="btn btn-dark" />
+            </form>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

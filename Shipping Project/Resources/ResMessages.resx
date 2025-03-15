@@ -153,6 +153,9 @@
   <data name="InvalidFileFormat" xml:space="preserve">
     <value>Invalid file format</value>
   </data>
+  <data name="InvalidUsernameOrEmail" xml:space="preserve">
+    <value>Invalid Username or Email</value>
+  </data>
   <data name="InvalidUsernameOrPassword" xml:space="preserve">
     <value>Invalid username or password</value>
   </data>

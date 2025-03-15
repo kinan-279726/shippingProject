@@ -16,6 +16,7 @@ C:\Users\DELL\Desktop\Shipping\Shipping Project\Resources\obj\Debug\net8.0\Resou
 C:\Users\DELL\Desktop\Shipping\Shipping Project\Resources\obj\Debug\net8.0\Resources.AssemblyInfoInputs.cache
 C:\Users\DELL\Desktop\Shipping\Shipping Project\Resources\obj\Debug\net8.0\Resources.AssemblyInfo.cs
 C:\Users\DELL\Desktop\Shipping\Shipping Project\Resources\obj\Debug\net8.0\Resources.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\Shipping\Shipping Project\Resources\obj\Debug\net8.0\Resources.sourcelink.json
 C:\Users\DELL\Desktop\Shipping\Shipping Project\Resources\obj\Debug\net8.0\ar\Resources.resources.dll
 C:\Users\DELL\Desktop\Shipping\Shipping Project\Resources\obj\Debug\net8.0\scopedcss\bundle\Resources.styles.css
 C:\Users\DELL\Desktop\Shipping\Shipping Project\Resources\obj\Debug\net8.0\staticwebassets.build.json

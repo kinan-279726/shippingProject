@@ -9,6 +9,7 @@ C:\Users\DELL\Desktop\Shipping\Shipping Project\DataAccess\obj\Debug\net8.0\Data
 C:\Users\DELL\Desktop\Shipping\Shipping Project\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
 C:\Users\DELL\Desktop\Shipping\Shipping Project\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
 C:\Users\DELL\Desktop\Shipping\Shipping Project\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\Shipping\Shipping Project\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json
 C:\Users\DELL\Desktop\Shipping\Shipping Project\DataAccess\obj\Debug\net8.0\DataAccess.csproj.Up2Date
 C:\Users\DELL\Desktop\Shipping\Shipping Project\DataAccess\obj\Debug\net8.0\DataAccess.dll
 C:\Users\DELL\Desktop\Shipping\Shipping Project\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
