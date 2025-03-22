@@ -117,8 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AllShipments" xml:space="preserve">
+    <value>جميع الشحنات</value>
+  </data>
   <data name="ArabicName" xml:space="preserve">
     <value>الأسم بالعربية</value>
+  </data>
+  <data name="centimeter" xml:space="preserve">
+    <value>سنتيمتر</value>
   </data>
   <data name="EnglishName" xml:space="preserve">
     <value>الأسم بالأنكليزية</value>
@@ -126,10 +132,70 @@
   <data name="FactorRange" xml:space="preserve">
     <value>يجب ان اتكون القيمة بين 0.25 و 10</value>
   </data>
+  <data name="Height" xml:space="preserve">
+    <value>الارتفاع</value>
+  </data>
+  <data name="ItemName" xml:space="preserve">
+    <value>اسم المادة</value>
+  </data>
+  <data name="KiloGram" xml:space="preserve">
+    <value>كيلو غرام</value>
+  </data>
+  <data name="Length" xml:space="preserve">
+    <value>الطول</value>
+  </data>
+  <data name="PackageDetails" xml:space="preserve">
+    <value>تفاصيل الطرد</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>الكمية</value>
+  </data>
+  <data name="ReceiverAccount" xml:space="preserve">
+    <value>حساب المستقبل</value>
+  </data>
+  <data name="ReceiverCity" xml:space="preserve">
+    <value>مدينة المستقبل</value>
+  </data>
+  <data name="ReceiverDetails" xml:space="preserve">
+    <value>بيانات المستقبل</value>
+  </data>
+  <data name="ReceiverName" xml:space="preserve">
+    <value>اسم المستقبل</value>
+  </data>
+  <data name="SenderAccount" xml:space="preserve">
+    <value>حساب المرسل</value>
+  </data>
+  <data name="SenderCity" xml:space="preserve">
+    <value>مدينة المرسل</value>
+  </data>
+  <data name="SenderDetails" xml:space="preserve">
+    <value>بيانات المرسل</value>
+  </data>
+  <data name="SenderName" xml:space="preserve">
+    <value>اسم المرسل</value>
+  </data>
+  <data name="Shipment" xml:space="preserve">
+    <value>شحنة</value>
+  </data>
   <data name="ShipmentType" xml:space="preserve">
     <value>نوع الشحن </value>
   </data>
+  <data name="ShippingDate" xml:space="preserve">
+    <value>تاريخ الشحن</value>
+  </data>
   <data name="ShippingFactor" xml:space="preserve">
     <value>العمولة الاضافية</value>
+  </data>
+  <data name="TrackingNumber" xml:space="preserve">
+    <value>رقم التتبع</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>المستخدمين</value>
+  </data>
+  <data name="Weight" xml:space="preserve">
+    <value>الوزن</value>
+  </data>
+  <data name="Width" xml:space="preserve">
+    <value>العرض</value>
   </data>
 </root>

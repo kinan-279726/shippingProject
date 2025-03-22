@@ -123,6 +123,9 @@
   <data name="City " xml:space="preserve">
     <value>المدينة </value>
   </data>
+  <data name="Commission" xml:space="preserve">
+    <value>العمولة</value>
+  </data>
   <data name="ConfirmPassword" xml:space="preserve">
     <value>تأكيد كلمة السر</value>
   </data>
@@ -141,8 +144,14 @@
   <data name="First Name " xml:space="preserve">
     <value>الاسم الأول</value>
   </data>
+  <data name="SenderCity" xml:space="preserve">
+    <value>مدينة المرسل</value>
+  </data>
   <data name="Gender " xml:space="preserve">
     <value>الجنس </value>
+  </data>
+  <data name="HomeSliders" xml:space="preserve">
+    <value>شرائح الصفحة الرئيسية</value>
   </data>
   <data name="LastName " xml:space="preserve">
     <value>الاسم الأخير</value>
@@ -153,6 +162,9 @@
   <data name="Password " xml:space="preserve">
     <value>كلمة المرور</value>
   </data>
+  <data name="PaymentMethod" xml:space="preserve">
+    <value>طريقة الدفع </value>
+  </data>
   <data name="PhoneNumber " xml:space="preserve">
     <value>رقم الهاتف</value>
   </data>
@@ -161,5 +173,20 @@
   </data>
   <data name="Username " xml:space="preserve">
     <value>اسم المستخدم</value>
+  </data>
+  <data name="WebSettings" xml:space="preserve">
+    <value>اعدادات الويب</value>
+  </data>
+  <data name="receiverCity" xml:space="preserve">
+    <value>مدينة المستقبل</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="PackgeItems" xml:space="preserve">
+    <value>محتويات الطرد</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>قبول</value>
   </data>
 </root>

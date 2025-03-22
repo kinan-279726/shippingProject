@@ -49,11 +49,11 @@ public class BaseServices<T , Dto> : IBaseServices<T , Dto> where T : BaseTable 
             throw new DataAccessException(ex, "", Ologger);
         }
     }
-    public bool Update(Dto entity)
+    public bool Update(Dto entity , string userId = "")
     {
         try
         {
-            string userId = OusersServices.GetCrruntUser();
+             userId = OusersServices.GetCrruntUser();
             Orepo.Update(Omapper.Map<Dto, T>(entity), userId);
             return true;
         }
@@ -62,11 +62,11 @@ public class BaseServices<T , Dto> : IBaseServices<T , Dto> where T : BaseTable 
             throw new DataAccessException(ex, "", Ologger);
         }
     }
-    public bool Add(Dto entity)
+    public bool Add(Dto entity , string userId = "")
     {
         try
         {
-            string userId = OusersServices.GetCrruntUser();
+             userId = OusersServices.GetCrruntUser();
             Orepo.Add(Omapper.Map<Dto, T>(entity), userId);
             return true;
         }
@@ -75,11 +75,11 @@ public class BaseServices<T , Dto> : IBaseServices<T , Dto> where T : BaseTable 
             throw new DataAccessException(ex, "", Ologger);
         }
     }
-    public bool ChangeCurrentStatus(string id)
+    public bool ChangeCurrentStatus(string id , string userId = "")
     {
         try
         {
-            string userId = OusersServices.GetCrruntUser();
+             userId = OusersServices.GetCrruntUser();
             Orepo.ChangeCurrentStatus(id, userId);
             return true;
         }

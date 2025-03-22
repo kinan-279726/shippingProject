@@ -45,6 +45,15 @@ public static class RegisterServices
         // configure Authorization
         builder.Services.AddAuthorization();
 
+        // configure session 
+        builder.Services.AddDistributedMemoryCache();
+        builder.Services.AddSession(option =>
+        {
+            option.IdleTimeout = TimeSpan.FromMinutes(10);
+            option.Cookie.HttpOnly = true;
+            option.Cookie.IsEssential = true;
+        });
+
         // inject Generic repository
         builder.Services.AddScoped(typeof(ItablsGenericRepositorys<>), typeof(TablsGenericRepositorys<>));
         builder.Services.AddScoped(typeof(IviewsGenericRepositorys<>), typeof(ViewsGenericRepositorys<>));
@@ -66,9 +75,11 @@ public static class RegisterServices
         builder.Services.AddScoped<IShipmentStatusServices, ShipmentStatusServices>();
         builder.Services.AddScoped<ISubscriptionPackagesServices, SubsciptionPackagesServices>();
         builder.Services.AddScoped<IPaymentMethodServices, PaymentMethodServices>();
+        builder.Services.AddScoped<IShipmentItemsServices, ShipmentItemsServices>();
 
         // views
         builder.Services.AddScoped<IViewCitesServices ,VeiwCitesServices>();
+        builder.Services.AddScoped<IViewShipmentsServices, ViewShipmentsServices>();
 
         // opject
         builder.Services.AddScoped<HttpContextAccessor , HttpContextAccessor>();

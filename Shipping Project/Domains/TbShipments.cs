@@ -39,4 +39,5 @@ public class TbShipments : BaseTable
     public virtual TbShipmentStatus? tbShipmentStatus { get; set; }
     public virtual TbUserSubscriptions? tbUserSubscriptions { get; set; }
     public virtual TbPaymentMethod? tbPaymentMethod { get; set; }
+    public ICollection<TbShipmentItems> ShipmentItem { get; set; } = new List<TbShipmentItems>();
 }

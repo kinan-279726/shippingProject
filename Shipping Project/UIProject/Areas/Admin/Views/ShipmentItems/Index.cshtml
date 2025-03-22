@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model List<ShipmentItemsDto>
+<div class="col-12 grid-margin stretch-card h-100 ">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title mt-5 mb-5">@ResLabels.PackgeItems</h4>
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th> # </th>
+                        <th>@ResLabels.Country_ @ResShipping.ItemName </th>
+                        <th>@ResLabels.Country_ @ResShipping.Quantity </th>
+                        <th> @ResActions.Action </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int x = 1; x <= Model.Count; x++)
+                    {
+                        <tr>
+                            <td>@x</td>
+                            <td> @Model[x - 1].ItemName </td>
+                            <td> @Model[x - 1].Quantity </td>
+                            <td>
+                                <a asp-action="Edit" asp-controller="ShipmentItems" asp-route-id="@Model[x-1].Id" class="btn btn-info">@ResActions.Edit</a>
+                                <button asp-action="ChangeStatus" asp-controller="ShipmentItems" asp-route-id="@Model[x-1].Id" class="btn btn-danger">@ResActions.Delete</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+@section Scripts {
+}

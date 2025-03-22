@@ -28,7 +28,7 @@ public class UserServices : BaseTable, IUsersServices
         OuserManager = ouserManager;
     }
 
-    public async Task<IEnumerable<UsersDto>> GetAllUsersAsync()
+    public async Task<List<UsersDto>> GetAllUsersAsync()
     {
         return await OuserManager.Users.Select(user => new UsersDto
         {

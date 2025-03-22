@@ -1,0 +1,34 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model ShipmentItemsDto
+<div class="col-12 grid-margin stretch-card h-100 ">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title mt-5 mb-5">@ResActions.Edit @ResLabels.PackgeItems </h4>
+            <form class="forms-sample" method="post" asp-action="Edit" asp-controller="ShipmentItems">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label for="exampleInputName1">@ResShipping.ItemName</label>
+                    <input asp-for="ItemName" type="text" class="form-control" id="exampleInputName1" placeholder="@ResShipping.ItemName">
+                    <span asp-validation-for="ItemName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">@ResShipping.Quantity</label>
+                    <input asp-for="Quantity" type="number" min="1" class="form-control" id="exampleInputEmail3" placeholder="@ResShipping.Quantity">
+                    <span asp-validation-for="Quantity" class="text-danger"></span>
+                </div>
+                <input type="hidden"  value="@Model.ShipmentId" asp-for="ShipmentId" />
+                <input type="submit" value="@ResActions.Submit" class="btn btn-gradient-primary me-2">
+                <input type="reset" value="@ResActions.Cancel" class="btn btn-dark" />
+            </form>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
