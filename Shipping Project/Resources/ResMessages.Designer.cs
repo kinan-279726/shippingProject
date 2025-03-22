@@ -349,6 +349,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Quantity Range Must Be From 1 To 1000.
+        /// </summary>
+        public static string QuantityRange {
+            get {
+                return ResourceManager.GetString("QuantityRange", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Record deleted successfully.
         /// </summary>
         public static string RecordDeletedSuccessfully {

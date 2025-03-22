@@ -1,0 +1,41 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model PaymentMethodDto
+<div class="col-12 grid-margin stretch-card h-100 ">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title mt-5 mb-5">@ResActions.Edit @ResLabels.PaymentMethod</h4>
+            <form class="forms-sample" method="post" asp-action="Edit" asp-controller="PaymentMethod">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label for="exampleInputName1">@ResShipping.ArabicName</label>
+                    <input asp-for="MethodArabicName" type="text" class="form-control" id="exampleInputName1" placeholder="@ResShipping.ArabicName">
+                    <span asp-validation-for="MethodArabicName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">@ResShipping.EnglishName</label>
+                    <input asp-for="MethodEnglishName" type="text" class="form-control" id="exampleInputEmail3" placeholder="@ResShipping.EnglishName">
+                    <span asp-validation-for="MethodEnglishName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">@ResLabels.Commission</label>
+                    <input asp-for="Commission" type="text" class="form-control" id="exampleInputEmail3" placeholder="@ResLabels.Commission">
+                    <span asp-validation-for="Commission" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="hidden" asp-for="Id">
+                </div>
+                <input type="submit" value="@ResActions.Submit" class="btn btn-gradient-primary me-2">
+                <input type="reset" value="@ResActions.Cancel" class="btn btn-dark" />
+            </form>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -33,9 +33,11 @@ public class DbContextShipment : IdentityDbContext<TbUsers> // inhiret from cust
     public virtual DbSet<TbUsersReceivers> TbUsersReceivers { get; set; }
     public virtual DbSet<TbUsersSender> TbUsersSender { get; set; }
     public virtual DbSet<TbUserSubscriptions> TbUserSubscriptions { get; set; }
+    public virtual DbSet<TbShipmentItems> TbShipmentItems { get; set; }
 
     // views
     public virtual DbSet<VwCiti> VwCitis { get; set; }
+    public virtual DbSet<VwShipment> VwShipments { get; set; }
     protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
     {
         base.ConfigureConventions(configurationBuilder);
@@ -169,6 +171,16 @@ public class DbContextShipment : IdentityDbContext<TbUsers> // inhiret from cust
 
         builder.Entity<TbAboutUs>().HasKey(a => a.Id);
 
+        builder.Entity<TbShipmentItems>(entity =>
+        {
+            entity.HasKey(a => a.Id);
+            entity.HasOne(a => a.tbShipments)
+            .WithMany(a => a.ShipmentItem)
+            .HasForeignKey(a => a.ShipmentId);
+        });
+
+        // views
+
         builder.Entity<VwCiti>(entity =>
         {
             entity
@@ -182,7 +194,44 @@ public class DbContextShipment : IdentityDbContext<TbUsers> // inhiret from cust
             entity.Property(e => e.CountryEnglishName).HasMaxLength(100);
             entity.Property(e => e.CountryId).HasMaxLength(450);
         });
+        builder.Entity<VwShipment>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToView("VwShipments");
 
+            entity.Property(e => e.PaymentMethodId).HasMaxLength(450);
+            entity.Property(e => e.ReceiverCityName)
+                .HasMaxLength(100)
+                .HasColumnName("receiverCityName");
+            entity.Property(e => e.ReceiverCityid)
+                .HasMaxLength(450)
+                .HasColumnName("receiverCityid");
+            entity.Property(e => e.ReceiverEmail)
+                .HasMaxLength(100)
+                .HasColumnName("receiverEmail");
+            entity.Property(e => e.ReceiverId).HasMaxLength(450);
+            entity.Property(e => e.ReceiverName).HasMaxLength(100);
+            entity.Property(e => e.ReceiverPhone)
+                .HasMaxLength(100)
+                .HasColumnName("receiverPhone");
+            entity.Property(e => e.SenderCityName)
+                .HasMaxLength(100)
+                .HasColumnName("senderCityName");
+            entity.Property(e => e.SenderCityid)
+                .HasMaxLength(450)
+                .HasColumnName("senderCityid");
+            entity.Property(e => e.SenderEmail)
+                .HasMaxLength(100)
+                .HasColumnName("senderEmail");
+            entity.Property(e => e.SenderId).HasMaxLength(450);
+            entity.Property(e => e.SenderName).HasMaxLength(100);
+            entity.Property(e => e.SenderPhone)
+                .HasMaxLength(100)
+                .HasColumnName("senderPhone");
+            entity.Property(e => e.ShippingTypeId).HasMaxLength(450);
+            entity.Property(e => e.ShippmentId).HasMaxLength(450);
+        });
     }
     protected override Version SchemaVersion => base.SchemaVersion;
 }

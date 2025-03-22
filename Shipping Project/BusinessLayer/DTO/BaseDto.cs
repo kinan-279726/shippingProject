@@ -12,4 +12,8 @@ public  class BaseDto
 {
     [ValidateNever]
     public required string Id { get; set; }
+
+    // get the currnt user if th requst from api 
+    [ValidateNever]
+    public string CurrentUser { get; set; } = "";
 }

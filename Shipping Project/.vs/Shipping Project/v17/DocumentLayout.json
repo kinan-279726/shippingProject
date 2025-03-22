@@ -3,36 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4C0026AB-F83E-48EE-BA53-4C27D1834D7C}|UIProject\\UIProject.csproj|c:\\users\\dell\\desktop\\shipping\\shipping project\\uiproject\\areas\\admin\\controllers\\citescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C0026AB-F83E-48EE-BA53-4C27D1834D7C}|UIProject\\UIProject.csproj|solutionrelative:uiproject\\areas\\admin\\controllers\\citescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4C0026AB-F83E-48EE-BA53-4C27D1834D7C}|UIProject\\UIProject.csproj|c:\\users\\dell\\desktop\\shipping\\shipping project\\uiproject\\areas\\admin\\views\\shipments\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4C0026AB-F83E-48EE-BA53-4C27D1834D7C}|UIProject\\UIProject.csproj|solutionrelative:uiproject\\areas\\admin\\views\\shipments\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C0026AB-F83E-48EE-BA53-4C27D1834D7C}|UIProject\\UIProject.csproj|c:\\users\\dell\\desktop\\shipping\\shipping project\\uiproject\\areas\\admin\\views\\cites\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4C0026AB-F83E-48EE-BA53-4C27D1834D7C}|UIProject\\UIProject.csproj|solutionrelative:uiproject\\areas\\admin\\views\\cites\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4C0026AB-F83E-48EE-BA53-4C27D1834D7C}|UIProject\\UIProject.csproj|c:\\users\\dell\\desktop\\shipping\\shipping project\\uiproject\\areas\\admin\\controllers\\shipmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C0026AB-F83E-48EE-BA53-4C27D1834D7C}|UIProject\\UIProject.csproj|solutionrelative:uiproject\\areas\\admin\\controllers\\shipmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C0026AB-F83E-48EE-BA53-4C27D1834D7C}|UIProject\\UIProject.csproj|c:\\users\\dell\\desktop\\shipping\\shipping project\\uiproject\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4C0026AB-F83E-48EE-BA53-4C27D1834D7C}|UIProject\\UIProject.csproj|solutionrelative:uiproject\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4C0026AB-F83E-48EE-BA53-4C27D1834D7C}|UIProject\\UIProject.csproj|c:\\users\\dell\\desktop\\shipping\\shipping project\\uiproject\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C0026AB-F83E-48EE-BA53-4C27D1834D7C}|UIProject\\UIProject.csproj|solutionrelative:uiproject\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C0026AB-F83E-48EE-BA53-4C27D1834D7C}|UIProject\\UIProject.csproj|c:\\users\\dell\\desktop\\shipping\\shipping project\\uiproject\\areas\\admin\\views\\cites\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4C0026AB-F83E-48EE-BA53-4C27D1834D7C}|UIProject\\UIProject.csproj|solutionrelative:uiproject\\areas\\admin\\views\\cites\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4C0026AB-F83E-48EE-BA53-4C27D1834D7C}|UIProject\\UIProject.csproj|c:\\users\\dell\\desktop\\shipping\\shipping project\\uiproject\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4C0026AB-F83E-48EE-BA53-4C27D1834D7C}|UIProject\\UIProject.csproj|solutionrelative:uiproject\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C0026AB-F83E-48EE-BA53-4C27D1834D7C}|UIProject\\UIProject.csproj|c:\\users\\dell\\desktop\\shipping\\shipping project\\uiproject\\areas\\admin\\views\\cites\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4C0026AB-F83E-48EE-BA53-4C27D1834D7C}|UIProject\\UIProject.csproj|solutionrelative:uiproject\\areas\\admin\\views\\cites\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{632531A3-E4A2-4ADB-A6DA-F7B74AF8A21A}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\dell\\desktop\\shipping\\shipping project\\businesslayer\\dto\\countriesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{632531A3-E4A2-4ADB-A6DA-F7B74AF8A21A}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\dto\\countriesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{632531A3-E4A2-4ADB-A6DA-F7B74AF8A21A}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\dell\\desktop\\shipping\\shipping project\\businesslayer\\dto\\vwcitesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{632531A3-E4A2-4ADB-A6DA-F7B74AF8A21A}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\dto\\vwcitesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{632531A3-E4A2-4ADB-A6DA-F7B74AF8A21A}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\dell\\desktop\\shipping\\shipping project\\businesslayer\\dto\\citesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{632531A3-E4A2-4ADB-A6DA-F7B74AF8A21A}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\dto\\citesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{632531A3-E4A2-4ADB-A6DA-F7B74AF8A21A}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\dell\\desktop\\shipping\\shipping project\\businesslayer\\contracts\\iusersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{632531A3-E4A2-4ADB-A6DA-F7B74AF8A21A}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\contracts\\iusersservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,104 +38,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\UIProject\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "UIProject\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\UIProject\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "UIProject\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAOgAAAAAAAAAAAAAAP0AAAB0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-15T22:32:18.456Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\UIProject\\Areas\\Admin\\Views\\Cites\\Index.cshtml",
-              "RelativeDocumentMoniker": "UIProject\\Areas\\Admin\\Views\\Cites\\Index.cshtml",
-              "ToolTip": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\UIProject\\Areas\\Admin\\Views\\Cites\\Index.cshtml",
-              "RelativeToolTip": "UIProject\\Areas\\Admin\\Views\\Cites\\Index.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACYAAABlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-15T22:29:33.271Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "VwCitesDto.cs",
-              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\BusinessLayer\\DTO\\VwCitesDto.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\DTO\\VwCitesDto.cs",
-              "ToolTip": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\BusinessLayer\\DTO\\VwCitesDto.cs",
-              "RelativeToolTip": "BusinessLayer\\DTO\\VwCitesDto.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAATAAAAAAAAAA==",
+              "Title": "IUsersServices.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\BusinessLayer\\Contracts\\IUsersServices.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Contracts\\IUsersServices.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\BusinessLayer\\Contracts\\IUsersServices.cs",
+              "RelativeToolTip": "BusinessLayer\\Contracts\\IUsersServices.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T18:05:24.516Z"
+              "WhenOpened": "2025-03-22T00:11:28.886Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CitesDto.cs",
-              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\BusinessLayer\\DTO\\CitesDto.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\DTO\\CitesDto.cs",
-              "ToolTip": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\BusinessLayer\\DTO\\CitesDto.cs",
-              "RelativeToolTip": "BusinessLayer\\DTO\\CitesDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAsAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "UserServices.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\UIProject\\Services\\UserServices.cs",
+              "RelativeDocumentMoniker": "UIProject\\Services\\UserServices.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\UIProject\\Services\\UserServices.cs",
+              "RelativeToolTip": "UIProject\\Services\\UserServices.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwCcAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T18:05:17.515Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CountriesDto.cs",
-              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\BusinessLayer\\DTO\\CountriesDto.cs",
-              "RelativeDocumentMoniker": "BusinessLayer\\DTO\\CountriesDto.cs",
-              "ToolTip": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\BusinessLayer\\DTO\\CountriesDto.cs",
-              "RelativeToolTip": "BusinessLayer\\DTO\\CountriesDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T17:52:06.903Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\UIProject\\Areas\\Admin\\Views\\Cites\\Edit.cshtml",
-              "RelativeDocumentMoniker": "UIProject\\Areas\\Admin\\Views\\Cites\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\UIProject\\Areas\\Admin\\Views\\Cites\\Edit.cshtml",
-              "RelativeToolTip": "UIProject\\Areas\\Admin\\Views\\Cites\\Edit.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-15T17:30:24.334Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-22T00:11:43.021Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Add.cshtml",
-              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\UIProject\\Areas\\Admin\\Views\\Cites\\Add.cshtml",
-              "RelativeDocumentMoniker": "UIProject\\Areas\\Admin\\Views\\Cites\\Add.cshtml",
-              "ToolTip": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\UIProject\\Areas\\Admin\\Views\\Cites\\Add.cshtml",
-              "RelativeToolTip": "UIProject\\Areas\\Admin\\Views\\Cites\\Add.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAcAAAAAAAAAA==",
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\UIProject\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "UIProject\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\UIProject\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "UIProject\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-15T17:30:00.996Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T21:29:41.183Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CitesController.cs",
-              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\UIProject\\Areas\\Admin\\Controllers\\CitesController.cs",
-              "RelativeDocumentMoniker": "UIProject\\Areas\\Admin\\Controllers\\CitesController.cs",
-              "ToolTip": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\UIProject\\Areas\\Admin\\Controllers\\CitesController.cs",
-              "RelativeToolTip": "UIProject\\Areas\\Admin\\Controllers\\CitesController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAQwDwAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T17:29:11.018Z",
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\UIProject\\Areas\\Admin\\Views\\Shipments\\Add.cshtml",
+              "RelativeDocumentMoniker": "UIProject\\Areas\\Admin\\Views\\Shipments\\Add.cshtml",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\UIProject\\Areas\\Admin\\Views\\Shipments\\Add.cshtml",
+              "RelativeToolTip": "UIProject\\Areas\\Admin\\Views\\Shipments\\Add.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-21T21:29:07.163Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ShipmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\UIProject\\Areas\\Admin\\Controllers\\ShipmentsController.cs",
+              "RelativeDocumentMoniker": "UIProject\\Areas\\Admin\\Controllers\\ShipmentsController.cs",
+              "ToolTip": "C:\\Users\\DELL\\Desktop\\Shipping\\Shipping Project\\UIProject\\Areas\\Admin\\Controllers\\ShipmentsController.cs",
+              "RelativeToolTip": "UIProject\\Areas\\Admin\\Controllers\\ShipmentsController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwA8AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T09:31:13.525Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             }
           ]
         }

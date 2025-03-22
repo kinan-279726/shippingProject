@@ -36,18 +36,4 @@
     </div>
 </div>
 @section Scripts {
-    <script>
-        $(document).ready(function(){
-            $(".btn-danger").on('click' ,function(e){
-                var id = $(this).data("id");
-                var deletUrl = '@Url.Action("ChangeStatus", "ShippingType")';
-                console.log(id);
-                alert.confirmDelete(function (result){
-                    if(result){
-                        window.location.href = deletUrl+'/'+id;
-                    }
-                })
-            })
-        })
-    </script>
 }

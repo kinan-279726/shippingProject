@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace UIProject.Controllers
+namespace UIProject.Controllers;
+
+public class BaseController : Controller
 {
-    public class BaseController : Controller
-    {
-    }
 }

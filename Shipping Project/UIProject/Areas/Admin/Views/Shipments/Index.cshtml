@@ -1,0 +1,72 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model List<VwShipmentDto>
+<div class="col-12 grid-margin stretch-card h-100 ">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title mt-5 mb-5">@ResShipping.AllShipments</h4>
+            <table class="table table-dark ">
+                <thead >
+                    <tr>
+                        <th> # </th>
+                        <th> @ResLabels.SenderCity </th>
+                        <th> @ResLabels.receiverCity </th>
+                        <th> @ResShipping.ShippingDate </th>
+                        <th> @ResShipping.ShipmentType </th>
+                        <th> @ResLabels.PaymentMethod </th>
+                        <th> @ResShipping.TrackingNumber </th>
+                        <th> @ResShipping.SenderDetails </th>
+                        <th> @ResShipping.ReceiverDetails </th>
+                        <th> @ResShipping.PackageDetails </th>
+                        <th> @ResActions.Action </th>
+                    </tr>
+                </thead>
+                <tbody>
+                        @for(int x =1; x<=Model.Count; x++){
+                        <tr>
+                            <td>@x</td>
+                            <td> @Model[x-1].SenderCityName </td>
+                            <td> @Model[x-1].ReceiverCityName </td>
+                            <td> @Model[x-1].ShipmentDate </td>
+                            <td> @Model[x-1].TypeEnglishName </td>
+                            <td> @Model[x-1].MethodEnglishName </td>
+                            <td> @Model[x - 1].TrackingNumber </td>
+                            <td>
+                                <select  class="form-control" id="exampleInputName1" >
+                                    <option title="">@ResLabels.Name : @Model[x - 1].SenderName </option>
+                                    <option title="">@ResLabels.PhoneNumber_ @Model[x - 1].SenderPhone </option>
+                                    <option title="">@ResLabels.Email_ @Model[x - 1].SenderEmail </option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="form-control" id="exampleInputName1">
+                                    <option title="">@ResLabels.Name : @Model[x - 1].ReceiverName </option>
+                                    <option title="">@ResLabels.PhoneNumber_ : @Model[x - 1].ReceiverPhone </option>
+                                    <option title="">@ResLabels.Email_ : @Model[x - 1].ReceiverEmail </option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="form-control" id="exampleInputName1">
+                                    <option title="">@ResShipping.Width : @Model[x - 1].Width @ResShipping.centimeter </option>
+                                    <option title="">@ResShipping.Length : @Model[x - 1].Length @ResShipping.centimeter </option>
+                                    <option title="">@ResShipping.Height : @Model[x - 1].Height @ResShipping.centimeter </option>
+                                    <option title="">@ResShipping.Weight : @Model[x - 1].Weight @ResShipping.KiloGram </option>
+                                </select>
+                            </td>
+                            <td>
+                                <a asp-action="Index" asp-controller="ShipmentItems" asp-route-shipmentId="@Model[x-1].ShippmentId" class="btn btn-gradient-primary">@ResLabels.PackgeItems</a>
+                                <a asp-action="ChangeStatus" asp-controller="PaymentMethod"  asp-route-id="@Model[x-1].ShippmentId" class="btn btn-success" >@ResLabels.Accept</a>
+                            </td>
+                        </tr>
+                        }
+                </tbody>
+            </table>
+            <a asp-controller="PaymentMethod" asp-action="Add" class="btn btn-primary mt-5">@ResActions.New</a>
+        </div>
+    </div>
+</div>
+@section Scripts {
+}

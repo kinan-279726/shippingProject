@@ -61,6 +61,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Accept.
+        /// </summary>
+        public static string Accept {
+            get {
+                return ResourceManager.GetString("Accept", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Address .
         /// </summary>
         public static string Address_ {
@@ -75,6 +84,15 @@ namespace Resources {
         public static string City_ {
             get {
                 return ResourceManager.GetString("City ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Commission.
+        /// </summary>
+        public static string Commission {
+            get {
+                return ResourceManager.GetString("Commission", resourceCulture);
             }
         }
         
@@ -142,6 +160,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to HomeSliders.
+        /// </summary>
+        public static string HomeSliders {
+            get {
+                return ResourceManager.GetString("HomeSliders", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Las tName .
         /// </summary>
         public static string LastName_ {
@@ -160,11 +187,38 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        public static string Name {
+            get {
+                return ResourceManager.GetString("Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Packge Items.
+        /// </summary>
+        public static string PackgeItems {
+            get {
+                return ResourceManager.GetString("PackgeItems", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Password .
         /// </summary>
         public static string Password_ {
             get {
                 return ResourceManager.GetString("Password ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Payment Method.
+        /// </summary>
+        public static string PaymentMethod {
+            get {
+                return ResourceManager.GetString("PaymentMethod", resourceCulture);
             }
         }
         
@@ -178,6 +232,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to receiver City.
+        /// </summary>
+        public static string receiverCity {
+            get {
+                return ResourceManager.GetString("receiverCity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Remember Me.
         /// </summary>
         public static string RememberMe {
@@ -187,11 +250,29 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sender City.
+        /// </summary>
+        public static string SenderCity {
+            get {
+                return ResourceManager.GetString("SenderCity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Username .
         /// </summary>
         public static string Username_ {
             get {
                 return ResourceManager.GetString("Username ", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Web settings.
+        /// </summary>
+        public static string WebSettings {
+            get {
+                return ResourceManager.GetString("WebSettings", resourceCulture);
             }
         }
     }

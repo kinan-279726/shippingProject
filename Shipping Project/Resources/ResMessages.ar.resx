@@ -213,6 +213,9 @@
   <data name="PermissionDenied" xml:space="preserve">
     <value>ليس لديك إذن لأداء هذا الإجراء</value>
   </data>
+  <data name="QuantityRange" xml:space="preserve">
+    <value>الكمية يجب ان تكون بين 1 و 1000</value>
+  </data>
   <data name="RecordDeletedSuccessfully" xml:space="preserve">
     <value>تم حذف السجل بنجاح</value>
   </data>

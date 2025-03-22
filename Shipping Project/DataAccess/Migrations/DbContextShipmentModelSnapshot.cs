@@ -328,6 +328,46 @@ namespace DataAccess.Migrations
                     b.ToTable("TbSettings");
                 });
 
+            modelBuilder.Entity("Domains.TbShipmentItems", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("CreatedBy")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("CurrentState")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ItemName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ShipmentId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("UpdatedBy")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ShipmentId");
+
+                    b.ToTable("TbShipmentItems");
+                });
+
             modelBuilder.Entity("Domains.TbShipmentStatus", b =>
                 {
                     b.Property<string>("Id")
@@ -964,6 +1004,17 @@ namespace DataAccess.Migrations
                     b.Navigation("Countries");
                 });
 
+            modelBuilder.Entity("Domains.TbShipmentItems", b =>
+                {
+                    b.HasOne("Domains.TbShipments", "tbShipments")
+                        .WithMany("ShipmentItem")
+                        .HasForeignKey("ShipmentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("tbShipments");
+                });
+
             modelBuilder.Entity("Domains.TbShipmentStatus", b =>
                 {
                     b.HasOne("Domains.TbCarriers", "tbCarriers")
@@ -1170,6 +1221,8 @@ namespace DataAccess.Migrations
 
             modelBuilder.Entity("Domains.TbShipments", b =>
                 {
+                    b.Navigation("ShipmentItem");
+
                     b.Navigation("tbShipmentStatus");
                 });
 

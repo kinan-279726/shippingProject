@@ -1,0 +1,33 @@
+﻿@{
+}
+@model CountriesDto
+<div class=" col-12 grid-margin stretch-card h-100 ">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title mt-5 mb-5">@ResActions.AddNew @ResLabels.Country_</h4>
+            <form class="forms-sample" method="post" asp-action="Add" asp-controller="Countries">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label for="exampleInputName1">@ResShipping.ArabicName</label>
+                    <input asp-for="CountryArabicName" type="text" class="form-control" id="exampleInputName1" placeholder="@ResShipping.ArabicName">
+                    <span asp-validation-for="CountryArabicName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">@ResShipping.EnglishName</label>
+                    <input asp-for="CountryEnglishName" type="text" class="form-control" id="exampleInputEmail3" placeholder="@ResShipping.EnglishName">
+                    <span asp-validation-for="CountryEnglishName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="hidden" asp-for="Id">
+                </div>
+                <input type="submit" value="@ResActions.Submit" class="btn btn-gradient-primary me-2">
+                <input type="reset" value="@ResActions.Cancel" class="btn btn-dark" />
+            </form>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

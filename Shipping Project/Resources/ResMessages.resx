@@ -213,6 +213,9 @@
   <data name="PermissionDenied" xml:space="preserve">
     <value>You do not have permission to perform this action</value>
   </data>
+  <data name="QuantityRange" xml:space="preserve">
+    <value>Quantity Range Must Be From 1 To 1000</value>
+  </data>
   <data name="RecordDeletedSuccessfully" xml:space="preserve">
     <value>Record deleted successfully</value>
   </data>

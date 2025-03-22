@@ -30,8 +30,10 @@ public class MappingProfile : Profile
         CreateMap<TbUsers , UsersDto>().ReverseMap();
         CreateMap<TbUsersSender , UsersSenderDto>().ReverseMap();
         CreateMap<TbUserSubscriptions , UserSubscriptionsDto>().ReverseMap();
+        CreateMap<TbShipmentItems, ShipmentItemsDto>().ReverseMap();
 
         // views
         CreateMap<VwCiti , VwCitesDto>().ReverseMap();
+        CreateMap<VwShipment , VwShipmentDto>().ReverseMap();
     }
 }
